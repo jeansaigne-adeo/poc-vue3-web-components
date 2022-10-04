@@ -1,0 +1,28 @@
+{
+  "name": "vue3wc",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@mozaic-ds/icons": "^1.41.0",
+    "@mozaic-ds/styles": "^1.43.1",
+    "@mozaic-ds/vue-3": "^0.28.0",
+    "@mozaic-ds/web-fonts": "^1.22.0",
+    "vue": "^3.2.38"
+  },
+  "devDependencies": {
+    "@mozaic-ds/css-dev-tools": "^1.38.0",
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.55.0",
+    "vite": "^3.0.9"
+  }
+}

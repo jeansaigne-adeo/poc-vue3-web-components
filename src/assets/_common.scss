@@ -1,0 +1,7 @@
+$local-config: (
+  font-path: '/node_modules/@mozaic-ds/web-fonts',
+);
+// noinspection CssUnknownTarget
+@import 'settings-tools/_all-settings';
+
+@include import-font-families();
