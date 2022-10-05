@@ -9,15 +9,9 @@ defineProps({
 
 <template>
   <h1>{{ msg }}</h1>
-  <!--  <section class="heading">
-      <h1 class="heading">{{ heading }}</h1>
-      <p class="content">
-        {{ content }}
-      </p>
-    </section>-->
 </template>
 
-<style>
+<style lang="scss">
 h1 {
   color: blueviolet;
 }

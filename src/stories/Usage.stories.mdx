@@ -1,0 +1,43 @@
+import {Meta, Source} from '@storybook/addon-docs';
+import dedent from 'ts-dedent';
+
+<Meta title="Usage"/>
+
+## Usage
+
+To use any component in your project you must integrate the last version of the library: configurators-web-components in your projects (available on npm).
+The library is distributed with the prefix `pc`(Project & Configurators) so you can identify in your template the components coming from the common library.
+
+1. Import the component in your application. (Specific to one of your component:
+
+<Source language="javascript" code={`import "configurators-web-components-lib/dist/pc.min.js";`}/>
+
+2. Call the component in your html template and give it the desired props, for example:
+
+<Source
+  language="html"
+  code={`<pc-configurator-header configuratorName="My Configurator Name"></pc-configurator-header>`}
+/>
+
+3. For an angular application you will need to activate the `CUSTOM_ELEMENTS_SCHEMAS` on the module including your library to allow the custom of custom html tags.
+
+<Source
+  language="javascript"
+  code={dedent`
+      import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+      import { BrowserModule } from '@angular/platform-browser';
+      import { AppRoutingModule } from '../app-routing.module';
+      import { FeatureComponent } from './feature.component';
+      import 'configurators-web-components/dist/pc.min.js';
+      @NgModule({
+        declarations: [
+          FeatureComponent
+        ],
+        imports: [
+          BrowserModule,
+          AppRoutingModule
+        ],
+        schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      })
+      export class FeatureModule { }`}
+/>
